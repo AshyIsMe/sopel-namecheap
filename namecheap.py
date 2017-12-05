@@ -10,8 +10,15 @@ def find_domains(domainsearch):
     html = driver.page_source
     soup = BeautifulSoup(html)
 
-    for tag in soup.find_all('li', {"class": "register"}):
-        print tag.text
+    domains = ""
+    for li in soup.find_all('li', {"class": "register"}):
+        domain = li.find('span', {"class": "domain-name"})
+        price = li.find('span', {"class": "domain-dollar-value"})
+        #print domain.text + ' ' +  price.text.replace('year', 'yr') + ', '
+        domains += domain.text + ' ' +  price.text.replace('year', 'yr') + ', '
+
+    return domains
 
 if __name__ == "__main__":
-    find_domains('plzbum.lol')
+    domains = find_domains('plzbum.lol')
+    print domains

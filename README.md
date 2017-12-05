@@ -12,17 +12,9 @@ Requires BeautifulSoup, selenium and phantomjs
 Now give it the good ol aussie try:
 
 ```
-python namecheap.py
-plzbum.lolA$34.17/yearAdd to Cart
-plzbum.meSPECIALA$3.80/yearRetail A$25.07/yearAdd to Cart
-plzbum.comKINGCOMA$11.73/yearRetail A$14.12/yearAdd to Cart
-plzbum.coSPECIALA$11.73/yearRetail A$30.36/yearAdd to Cart
-plzbum.lifeSPECIALA$2.48/yearRetail A$32.85/yearAdd to Cart
-plzbum.onlineSPECIALA$1.16/yearRetail A$43.41/yearAdd to Cart
-plzbum.servicesSPECIALA$2.48/yearRetail A$32.85/yearAdd to Cart
-plzbum.worldSPECIALA$2.48/yearRetail A$32.85/yearAdd to Cart
-plzbum.clubSPECIALA$1.02/yearRetail A$14.37/yearAdd to Cart
-plzbum.funSPECIALA$1.16/yearRetail A$26.25/yearAdd to Cart
+$ python namecheap.py
+plzbum.lol 33.99/yr, plzbum.nyc 16.92/yr, plzbum.co 11.66/yr, plzbum.life 2.47/yr, plzbum.services 2.47/yr, plzbum.online 1.16/yr, plzbum.fun 1.16/yr, plzbum.club 1.01/yr, plzbum.pw 1.16/yr, plzbum.live 5.10/yr, plzbum.store 6.41/yr, plzbum.net 16.92/yr, plzbum.org 13.12/yr, plzbum.accountant 0.63/yr, plzbum.io 43.19/yr, plzbum.tech 1.16/yr, plzbum.info 2.61/yr, plzbum.loan 0.63/yr, plzbum.download 0.63/yr, plzbum.host 1.16/yr, plzbum.bid 0.63/yr, plzbum.review 0.63/yr, plzbum.party 0.63/yr, plzbum.date 0.63/yr, plzbum.science 0.63/yr, plzbum.website 1.16/yr,
+
 ...
 ```
 
