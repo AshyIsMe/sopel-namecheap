@@ -2,12 +2,23 @@
 
 Namecheap domain lookup script for Sopel IRC bot.
 
-Requires BeautifulSoup, selenium and phantomjs
+## Installation
 
-`pip install BeautifulSoup`
-`pip install selenium`
-`sudo apt install phantomjs  # maybe...`
+Tested on Ubuntu 1604LTS. Requires BeautifulSoup, selenium and phantomjs.
 
+```
+sudo pip3 install BeautifulSoup selenium
+```
+
+The default Ubuntu phantomjs package appears to have issues. Download the static build here http://phantomjs.org/download.html as per the requirements:
+
+```
+sudo apt-get install libfreetype6 libfontconfig1 -y
+```
+
+Make sure the phantomjs binary is in your $PATH.
+
+## Running
 
 Now give it the good ol aussie try:
 
