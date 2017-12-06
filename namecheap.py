@@ -18,6 +18,24 @@ def find_domains(domainsearch):
            domains.append(domain.text + ' ' +  price.text.replace('year', 'yr'))
     return domains
 
+try:
+    import sopel.module
+except ImportError:
+    # Probably running from commandline
+    pass
+else:
+    @sopel.module.commands('namecheap')
+    @sopel.module.example('.namecheap example.com')
+    def f_namecheap(bot, trigger):
+        """Look up a domain name with namecheap"""
+        query = trigger.group(2).strip().lower()
+        domains = find_domains(query)
+        if len(domains):
+            bot.say(", ".join(domains))
+        else:
+            bot.say("Couldn't query namecheap with: " + query)
+        return sopel.module.NOLIMIT
+
 if __name__ == "__main__":
     import sys
     query = 'example.com'
