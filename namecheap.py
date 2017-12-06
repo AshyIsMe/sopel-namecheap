@@ -1,3 +1,4 @@
+from __future__ import print_function
 
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -14,11 +15,9 @@ def find_domains(domainsearch):
     for li in soup.find_all('li', {"class": "register"}):
         domain = li.find('span', {"class": "domain-name"})
         price = li.find('span', {"class": "domain-dollar-value"})
-        #print domain.text + ' ' +  price.text.replace('year', 'yr') + ', '
         domains += domain.text + ' ' +  price.text.replace('year', 'yr') + ', '
-
     return domains
 
 if __name__ == "__main__":
     domains = find_domains('plzbum.lol')
-    print domains
+    print(domains)
