@@ -19,5 +19,10 @@ def find_domains(domainsearch):
     return domains
 
 if __name__ == "__main__":
-    domains = find_domains('plzbum.lol')
+    import sys
+    query = 'example.com'
+    if len(sys.argv) > 1:
+       query = sys.argv[1]
+    print("Looking up {}".format(query))
+    domains = find_domains(query)
     print(", ".join(domains))
