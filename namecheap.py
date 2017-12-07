@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from __future__ import print_function
 
 from bs4 import BeautifulSoup
@@ -41,6 +43,6 @@ if __name__ == "__main__":
     query = 'example.com'
     if len(sys.argv) > 1:
        query = sys.argv[1]
-    print("Looking up {}".format(query))
+    #print("Looking up {}".format(query))
     domains = find_domains(query)
     print(", ".join(domains))
