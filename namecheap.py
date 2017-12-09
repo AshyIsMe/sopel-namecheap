@@ -9,6 +9,7 @@ BASE_URL = 'https://www.namecheap.com/domains/registration/results.aspx?domain='
 
 def find_domains(domainsearch):
     driver = webdriver.PhantomJS()
+    driver.implicitly_wait(1) # seconds
     driver.get(BASE_URL + domainsearch)
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
